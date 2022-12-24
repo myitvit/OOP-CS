@@ -38,5 +38,7 @@
                 return fullName;
             }
         }
+
+        public static int InstanceCount { get; set; }
     }
 }
