@@ -21,5 +21,22 @@
                 _lastName = value;
             }
         }
+
+        public string FullName
+        {
+            get
+            {
+                string fullName = LastName;
+                if (!string.IsNullOrWhiteSpace(FirstName))
+                {
+                    if (!string.IsNullOrWhiteSpace(fullName))
+                    {
+                        fullName += ", ";
+                    }
+                    fullName += FirstName;
+                }
+                return fullName;
+            }
+        }
     }
 }
