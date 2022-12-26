@@ -43,6 +43,16 @@ namespace ACM.BL
 
         public static int InstanceCount { get; set; }
 
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)
+        {
+            this.CustomerId = customerId;
+        }
+
         /// <summary>
         /// Retrieve one customer.
         /// </summary>
