@@ -19,7 +19,7 @@
 
         public EntityStateOption entityState { get; set; }
 
-        public bool Validate() { return true; }
+        public abstract bool Validate();
     }
 }
 

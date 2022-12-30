@@ -25,12 +25,19 @@
         /// Validates the product data.
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
-            if (string.IsNullOrWhiteSpace(ProductName)) isValid = false;
-            if (CurrentPrice == null) isValid = false;
+            if (string.IsNullOrWhiteSpace(ProductName))
+            {
+                isValid = false;
+            }
+
+            if (CurrentPrice == null)
+            {
+                isValid = false;
+            }
 
             return isValid;
         }
