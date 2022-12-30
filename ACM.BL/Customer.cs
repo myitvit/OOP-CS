@@ -18,12 +18,16 @@ namespace ACM.BL
 
         public int CustomerId { get; private set; }
 
+        public int CustomerType { get; set; }
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
         public string EmailAddress { get; set; }
 
         public List<Address> AddressList { get; set; }
+
+        public static int InstanceCount { get; set; }
 
         public string FullName
         {
@@ -41,8 +45,6 @@ namespace ACM.BL
                 return fullName;
             }
         }
-
-        public static int InstanceCount { get; set; }
 
         /// <summary>
         /// Validates the customer data.
