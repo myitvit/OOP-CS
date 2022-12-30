@@ -1,6 +1,6 @@
 ﻿namespace ACM.BL
 {
-    public class OrderItem
+    public class OrderItem : EntityBase
     {
         public int OrderItemId { get; private set; }
         public int ProductId { get; set; }
@@ -42,13 +42,24 @@
         /// Validates the order item data.
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
-            if (Quantity <= 0) isValid = false;
-            if (ProductId <= 0) isValid = false;
-            if (PurchasePrice == null) isValid = false;
+            if (Quantity <= 0)
+            {
+                isValid = false;
+            }
+
+            if (ProductId <= 0)
+            {
+                isValid = false;
+            }
+
+            if (PurchasePrice == null)
+            {
+                isValid = false;
+            }
 
             return isValid;
         }

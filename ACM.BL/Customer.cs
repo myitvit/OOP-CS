@@ -2,7 +2,7 @@
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntityBase
     {
         // Constructor chaining, we call the parametrized contructor from base contructor ": this(0)" 0 is a customerId for the parametrized constructor
         public Customer() : this(0)
@@ -50,12 +50,19 @@ namespace ACM.BL
         /// Validates the customer data.
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
-            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
-            if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
+            if (string.IsNullOrWhiteSpace(LastName))
+            {
+                isValid = false;
+            }
+
+            if (string.IsNullOrWhiteSpace(EmailAddress))
+            {
+                isValid = false;
+            }
 
             return isValid;
         }
