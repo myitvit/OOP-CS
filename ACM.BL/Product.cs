@@ -23,8 +23,7 @@ namespace ACM.BL
         {
             get
             {
-                var stringHandler = new StringHandler();
-                return stringHandler.InsertSpaces(productName);
+                return StringHandler.InsertSpaces(productName);
             }
             set
             {
