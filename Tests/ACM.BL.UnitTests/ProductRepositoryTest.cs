@@ -1,7 +1,7 @@
 ﻿using ACM.BL;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ACM.BLTest
+namespace ACM.BL.UnitTests
 {
     [TestClass()]
     public class ProductRepositoryTest

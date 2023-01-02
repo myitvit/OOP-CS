@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace ACM.BLTest
+namespace ACM.BL.UnitTests
 {
   [TestClass()]
   public class OrderRepositoryTests
