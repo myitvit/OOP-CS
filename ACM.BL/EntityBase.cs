@@ -17,7 +17,7 @@
             get { return Validate(); }
         }
 
-        public EntityStateOption entityState { get; set; }
+        public EntityStateOption EntityState { get; set; }
 
         public abstract bool Validate();
     }
