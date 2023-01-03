@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Acme.Common;
+using System.Collections.Generic;
 
 namespace ACM.BL
 {
-    public class Customer : EntityBase
+    public class Customer : EntityBase, ILoggable
     {
         // Constructor chaining, we call the parametrized contructor from base contructor ": this(0)" 0 is a customerId for the parametrized constructor
         public Customer() : this(0)
@@ -69,6 +70,5 @@ namespace ACM.BL
 
         public string Log() =>
             $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
-
     }
 }
