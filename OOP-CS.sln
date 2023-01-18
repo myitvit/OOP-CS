@@ -9,9 +9,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DB0EC9CA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACM.BL.UnitTests", "Tests\ACM.BL.UnitTests\ACM.BL.UnitTests.csproj", "{B88A1FB0-05CA-4A72-BC44-DC99A049634C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Common", "Acme.Common\Acme.Common.csproj", "{299142BF-90A0-4218-873A-7316C097D8CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Common", "Acme.Common\Acme.Common.csproj", "{299142BF-90A0-4218-873A-7316C097D8CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Common.UnitTests", "Tests\Acme.Common.UnitTests\Acme.Common.UnitTests.csproj", "{57BD1472-E0B5-4EC7-B1B6-285EB9959327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Common.UnitTests", "Tests\Acme.Common.UnitTests\Acme.Common.UnitTests.csproj", "{57BD1472-E0B5-4EC7-B1B6-285EB9959327}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAB31B27-78CB-4EEF-8822-522AC7B15EDE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
